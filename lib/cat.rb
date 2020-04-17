@@ -4,7 +4,7 @@ class Cat
   @@cats =[]
 
   def initialize(name, owner, mood = "nervous")
-    @name,@name, owner, mood
+    @name,@name, owner, @mood
     
   end
 end
