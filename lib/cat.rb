@@ -5,6 +5,10 @@ class Cat
 
   def initialize(name, owner, mood = "nervous")
     @name, @owner, @mood = name, owner, mood
-    
+    @@cats<< self
   end
-end
+  def self.all
+    @@cats
+
+  end
+end 
