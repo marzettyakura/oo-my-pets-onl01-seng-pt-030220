@@ -6,11 +6,11 @@ class Dog
   def initialize(name, owner, mood = "nervous")
     @name, @owner, @mood = name, owner, mood
     @@dogs<< self
-    end
+  
+  end
   
   def self.all
     @@dogs
   end
 
-   
-end 
+  end 
