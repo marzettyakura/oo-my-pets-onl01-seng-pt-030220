@@ -7,7 +7,7 @@ class Owner
   def initialize(species)
     @species = species
     @@all << self
-    @pets = { :fishes => [], :dogs => [], :cats => [] }
+    @pets = {:dogs => [], :cats => [] }
   end
 
   def self.all
@@ -26,10 +26,6 @@ class Owner
     "I am a #{species}."
   end
 
-  def buy_fish(name)
-    fish = Fish.new(name)
-    pets[:fishes] << fish
-  end
 
   def buy_cat(name)
     cat = Cat.new(name)
@@ -48,10 +44,6 @@ class Owner
 
   def play_with_cats
     pets[:cats].map {|cat| cat.mood = "happy"}
-  end
-
-  def feed_fish
-    pets[:fishes].map {|fish| fish.mood = "happy"}
   end
 
   def sell_pets
