@@ -7,6 +7,7 @@ class Dog
     @name, @owner, @mood = name, owner, mood
     @@dogs<< self
   end
+  
   def self.all
     @@dogs
 
